@@ -1,2 +1,1 @@
-# groupProjectAeos
-Game and UI/UX Design by me
+# This is an Afterwork project for Passerelle Numérique

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AEOS</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- PHASER -->
+  <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- LANDING SCREEN -->
+  <div class="screen-landing" id="screenLanding">
+    <div class="container">
+      <div class="title">
+        <h1>WELCOME TO AEOS</h1>
+      </div>
+      <div class="created-by">
+        <p>A game created by Adel, Elodie, Olivier & Stephanie.</p>
+      </div>
+      <div class="title-img">
+        <img src="assets/characters/mains/dogandplayer.png" alt="Iso & Dog">
+      </div>
+      <div class="intro-text">
+        <p>In the midst of a zombie apocalypse, your loyal companion has gone missing!<br>Navigate through the world of AEOS, breaking barriers, terminating zombies and collecting the 5 important items to be reunited with your dog.</p>
+      </div>
+      <div class="d-flex">
+        <div class="controls">
+          <img src="assets/objects/controls3.png" alt="Game Controls">
+        </div>
+        <div class="play">
+          <button type="button" class="playBtn" id="playBtn">
+            <h2>PLAY</h2>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- GAMEPLAY SCREEN  -->
+  <div id="screenGame" class="screen-game">
+    <div id="game">
+        <!-- GAME OVER SCREEN -->
+        <div id="gameOver">
+          <h2>OOPS, YOU DIED!</h2>
+          <p>left-click above or below to restart</p>
+        </div>
+        <div id="gameEnd">
+          <h2>CONGRATULATIONS!</h2>
+          <img src="assets/characters/mains/dogandplayer.png" alt="">
+          <p>left-click above or below to restart</p>
+        </div>
+    </div>
+  </div>
+
+</body>
+<script src="js/preload.js"></script>
+<script src="js/create.js"></script>
+<script src="js/update.js"></script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/introtext.js"></script>
+
+</html>
